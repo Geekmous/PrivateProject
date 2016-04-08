@@ -5,21 +5,21 @@ import java.util.List;
 
 public class Individual {
     // double code
-    private List<Double> genomes ;
+    private List<Double> genomos ;
     
     private double fitness;
     
     Individual() {
-        this.genomes = new ArrayList<Double>();
+        this.genomos = new ArrayList<Double>();
         this.fitness = 0;
     }
     
     public void setGenome(List<Double> genomos) {
-        this.genomes = genomos;
+        this.genomos = genomos;
     }
     
     public List<Double> getGenome() {
-       return this.genomes;
+       return this.genomos;
     }
     
     public void  setFitness(double fitness) {

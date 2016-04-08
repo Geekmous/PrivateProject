@@ -25,6 +25,7 @@ public class Engine {
         
         Population population = new Population(populationSize, mutationRate, crossoverRate, genomoLength, leftPoint, rightPoint, new mathFunction());
         population.initPopulation(maxPerturbation);
+        
         population.calculateBestWorstAverageTotal();
         while(population.generation < maxGeneration) {          
             population.mutate();
